@@ -11,7 +11,6 @@ namespace Chess
 
             board.Init();
             board.Draw();
-            
 
             while (!board.CheckMateWhite && !board.CheckMateBlack)
             {
