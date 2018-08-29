@@ -36,7 +36,11 @@ namespace Chess.Models
                     result = isWhite ? (start.Y < end.Y) : (start.Y > end.Y);
 
                     if (result) {
-                        result = IsPositionFreeOfAllies(end);
+                        if (matrix[end.X, end.Y] == null) {
+                            result = IsPositionFreeOfAllies(end);
+                        } else {
+                            result = false;
+                        }
                     }
                 }
             } 
