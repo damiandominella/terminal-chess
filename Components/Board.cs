@@ -184,11 +184,11 @@ namespace Chess.Components
             }
             catch (System.FormatException)
             {
-                Helper.Error("Wrong input format");
+                Helper.Error("Wrong input format, input must be: X, Y");
             }
             catch (System.IndexOutOfRangeException)
             {
-                Helper.Error("Wrong input format");
+                Helper.Error("Wrong input format, input must be: X, Y");
             }
 
             return result;

@@ -7,7 +7,7 @@ namespace Chess.Components
         {
             Console.ForegroundColor = isWhite ? ConsoleColor.Yellow : ConsoleColor.Blue;
             string player = isWhite ? "WHITE" : "BLACK";
-            Console.Write("[" + player + "], select the piece to move: ");
+            Console.Write("[" + player + "], select the piece to move (X, Y): ");
             Console.ResetColor();
         }
 
@@ -15,7 +15,7 @@ namespace Chess.Components
         {
             Console.ForegroundColor = isWhite ? ConsoleColor.Yellow : ConsoleColor.Blue;
             string player = isWhite ? "WHITE" : "BLACK";
-            Console.Write("[" + player + "], select the position where to move the piece: ");
+            Console.Write("[" + player + "], select the position where to move the piece (X, Y): ");
             Console.ResetColor();
         }
 
